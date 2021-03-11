@@ -13,17 +13,15 @@ Listed in `package.json > scripts` are run scripts. You can see available comman
 
 First, run `npm i` to install dependencies.
 
-- `npm run clean` to clean output folder.  
-- `npm run build` to generate production build.  
-- `npm run watch` to run and watch for changes.  
+- `npm run serve` to run local server.  
+- `npm run watch` to run local server and watch for changes.  
 - `npm start` is equivalent to `watch`.  
-- `npm run build-watch` to clean, build then watch.  
 - `npm run pre-deploy` to deploy on Netlify.  
 - `npm run pro-deploy` to deploy and set to production.  
 
 ## Deployment
 
-First create `./.netlify/state.json` containing `siteId`.
+Make sure `./.netlify/state.json` contains valid `siteId`.
 ```json
 { "siteId": "<your site id>" }
 ```
