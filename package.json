@@ -1,0 +1,34 @@
+{
+  "name": "pibgsam10",
+  "version": "0.0.1",
+  "description": "Laman web PIBG SAM10",
+  "keywords": [],
+  "author": "Nik Ahmad Z.",
+  "license": "ISC",
+  "homepage": "https://pibgsam10.netlify.app/",
+  "bugs": {
+    "url": "https://github.com/nikahmadz/pibgsam10/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikahmadz/pibgsam10.git"
+  },
+  "funding": [
+    "https://pibgsam10.netlify.app/funding"
+  ],
+  "private": true,
+  "scripts": {
+    "watch": "watch-http-server __publish -a 127.0.0.1 -p 8888 -o",
+    "serve": "http-server __publish -a 127.0.0.1 -p 8888 -o",
+    "start": "npm run watch",
+    "pre-deploy": "netlify deploy --message \"dev cli pre deployment\"",
+    "pro-deploy": "netlify deploy --prod --message \"dev cli pro deployment\""
+  },
+  "devDependencies": {
+    "watch-http-server": "^0.7.6",
+    "http-server": "^0.12.3",
+    "netlify-cli": "^3.1.1",
+    "netlify-identity-widget": "^1.9.1"
+  },
+  "dependencies": {}
+}
