@@ -21,13 +21,17 @@ First, run `npm i` to install dependencies.
 
 ## Deployment
 
+Link a local repo to an existing site on Netlify
+```sh
+netlify link
+```
 Make sure `./.netlify/state.json` contains valid `siteId`.
 ```json
 { "siteId": "<your site id>" }
 ```
 Then run:
 ```sh
-netlify deploy --prod --message "Deployment message" --open
+netlify deploy --prod --message "Deployment message"
 ```
 See [netlify-cli commands](https://cli.netlify.com/commands/) for details.
 
